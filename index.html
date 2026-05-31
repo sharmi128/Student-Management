@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart College Management System</title>
+  <style>
+    :root {
+      --bg1: #f4efe6;
+      --bg2: #d8e2dc;
+      --ink: #1d2b2a;
+      --card: rgba(255, 255, 255, 0.78);
+      --accent: #b56576;
+      --accent-2: #355070;
+      --border: rgba(29, 43, 42, 0.14);
+      --shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 20%, #ffe8d6 0%, transparent 36%),
+        radial-gradient(circle at 83% 18%, #cddafd 0%, transparent 30%),
+        linear-gradient(145deg, var(--bg1), var(--bg2));
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(900px, 100%);
+      border: 1px solid var(--border);
+      background: var(--card);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(4px);
+      animation: rise 700ms ease-out both;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.1;
+      letter-spacing: 0.3px;
+      color: var(--accent-2);
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-size: 1.05rem;
+      color: #314746;
+    }
+
+    .grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.85);
+      animation: fade 700ms ease-out both;
+    }
+
+    .panel:nth-child(2) { animation-delay: 120ms; }
+    .panel:nth-child(3) { animation-delay: 240ms; }
+
+    .panel h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.12rem;
+      color: var(--accent);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      line-height: 1.55;
+    }
+
+    .actions {
+      margin-top: 24px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 10px 16px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+      color: #fff;
+      background: linear-gradient(120deg, var(--accent), #e56b6f);
+      box-shadow: 0 8px 18px rgba(181, 101, 118, 0.35);
+    }
+
+    .btn.secondary {
+      background: linear-gradient(120deg, var(--accent-2), #5e7fa5);
+      box-shadow: 0 8px 18px rgba(53, 80, 112, 0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: #314746;
+      border-left: 4px solid var(--accent-2);
+      padding-left: 10px;
+    }
+
+    code {
+      background: rgba(53, 80, 112, 0.1);
+      border: 1px solid rgba(53, 80, 112, 0.2);
+      border-radius: 6px;
+      padding: 1px 6px;
+      font-family: Consolas, Menlo, monospace;
+      font-size: 0.9em;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Smart College Management System</h1>
+    <p class="subtitle">Java 17 + Maven desktop project for student, teacher, attendance, fees, and notices management.</p>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>Core Modules</h2>
+        <ul>
+          <li>Student module</li>
+          <li>Teacher module</li>
+          <li>Attendance module</li>
+          <li>Fees and notices</li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>Run Locally</h2>
+        <ul>
+          <li>Use Java 17</li>
+          <li>Run: <code>mvn clean package</code></li>
+          <li>Main class: <code>com.smartcollege.erp.App</code></li>
+        </ul>
+      </article>
+
+      <article class="panel">
+        <h2>GitHub Pages</h2>
+        <ul>
+          <li>This <code>index.html</code> enables browser preview.</li>
+          <li>Push to main branch.</li>
+          <li>Enable Pages from branch: <code>main</code>, folder: <code>/(root)</code>.</li>
+        </ul>
+      </article>
+    </section>
+
+    <div class="actions">
+      <a class="btn" href="./README.md">Open README</a>
+      <a class="btn secondary" href="./src/main/java/com/smartcollege/erp/App.java">View App.java</a>
+    </div>
+
+    <p class="note">Note: GitHub Pages shows this static page in browser. The Java Swing UI runs as a desktop app (not directly inside GitHub Pages).</p>
+  </main>
+</body>
+</html>

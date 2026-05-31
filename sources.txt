@@ -1,0 +1,10 @@
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\model\DataStore.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\model\Student.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\model\Teacher.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\AttendanceModule.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\Dashboard.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\FeesModule.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\Login.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\NoticeModule.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\StudentModule.java
+c:\Users\pc\Desktop\student management\SmartCollegeManagementSystem\src\main\java\com\smartcollege\erp\ui\TeacherModule.java
